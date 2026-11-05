@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios com loops</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="cabecalho">
+      <h1>Exercícios com loops</h1>
+      <p>Escolha um desenho, clique em um botão e informe a altura. O resto fica por conta dos loops!</p>
+    </header>
+
+    <main>
+      <div class="exercises">
+        <section class="exercise" aria-labelledby="triangle-title">
+          <div class="exercise-info">
+            <div class="exercise-heading">
+              <div><span class="exercise-number">EXERCÍCIO 01</span><h2 id="triangle-title">Triângulo</h2></div>
+
+            </div>
+            <p class="exercise-description">Uma linha de cada vez. A cada repetição, um novo <code>#</code> constrói um degrau.</p>
+          </div>
+          <div class="preview">
+            <div class="preview-body">
+              <pre class="output" id="triangulo" aria-label="Resultado do triângulo" aria-live="polite"></pre>
+              <div class="preview-example"><pre aria-label="Exemplo de triângulo com altura 7">      #
+     ##
+    ###
+   ####
+  #####
+ ######
+#######</pre><p class="example-caption">Exemplo com altura 7</p></div>
+            </div>
+          </div>
+          <div class="actions" role="group" aria-label="Gerar triângulo">
+            <button class="button button-primary" type="button" data-tipo="triangulo" data-destino="html">Mostrar no HTML</button>
+            <button class="button button-secondary" type="button" data-tipo="triangulo" data-destino="console">Mostrar no console</button>
+          </div>
+          <p class="exercise-hint">Você escolhe a altura ao clicar no botão.</p>
+        </section>
+
+        <section class="exercise" aria-labelledby="tree-title">
+          <div class="exercise-info">
+            <div class="exercise-heading">
+              <div><span class="exercise-number">EXERCÍCIO 02</span><h2 id="tree-title">Árvore</h2></div>
+
+            </div>
+            <p class="exercise-description">Dê altura à copa, acrescente um caule e finalize com uma estrela. Tudo com repetições.</p>
+          </div>
+          <div class="preview">
+            <div class="preview-body">
+              <pre class="output" id="arvore" aria-label="Resultado da árvore" aria-live="polite"></pre>
+              <div class="preview-example"><pre aria-label="Exemplo de árvore com altura 7">        ☆
+        ##
+       ####
+      ######
+     ########
+    ##########
+   ############
+  ##############
+        ##
+        ##
+________##________</pre><p class="example-caption">Exemplo com altura 7</p></div>
+            </div>
+          </div>
+          <div class="actions" role="group" aria-label="Gerar árvore">
+            <button class="button button-primary" type="button" data-tipo="arvore" data-destino="html">Mostrar no HTML</button>
+            <button class="button button-secondary" type="button" data-tipo="arvore" data-destino="console">Mostrar no console</button>
+          </div>
+          <p class="exercise-hint">Altura do caule = metade da copa, arredondada para baixo.</p>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
